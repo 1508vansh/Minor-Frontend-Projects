@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./Space.jpg);
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mars-orbit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted white;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+}
+.earth-orbit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted white;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+.venus-orbit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted white;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+.mercury-orbit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dotted white;
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+}
+.sun{
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*we need to make the element's position
+    relative in order to animate it , but we 
+    can also use without making it relative, 
+    we can use tranform*/
+    animation-name: sun;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    box-shadow: 0px 0px 40px 10px red;
+}
+.planet{
+    border-radius: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+}
+.earth{
+   height: 50px;
+   width: 50px;
+   background-color: aqua;
+   animation-duration: 5s;
+   animation-name: earth-rotation;
+   box-shadow: 0px 0px 20px aqua;
+}
+.mars{
+    height: 60px;
+    width: 60px;
+    background-color: brown;
+    box-shadow: 0px 0px 20px brown;
+    animation-duration: 9s;
+    animation-name: mars-rotation;
+ }
+ .venus{
+    height: 50px;
+    width: 50px;
+    background-color:bisque;
+    animation-duration: 3s;
+    box-shadow: 0px 0px 20px bisque;
+    animation-name: venus-rotation;
+    animation-timing-function:linear;
+ }
+ .mercury{
+    font-size:xx-small;
+    height: 30px;
+    width: 30px;
+    background-color:chocolate;
+    animation-duration: 2s;
+    box-shadow: 0px 0px 20px chocolate;
+    animation-name: mercury-rotation;
+ }
+@keyframes sun {
+    /*we need to implement these
+    from, top function to define animation we can 
+    use pixels from a perticular position or tranform as well*/
+    from{
+        /*starting position relative to the element*/
+       transform: rotate(0deg);
+    }
+    to{
+        /*ending position relative to the element*/
+        transform: rotate(360deg);
+    }
+}
+@keyframes earth-rotation {
+    from{
+       transform: rotate(0deg) translate(200px) rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg) translate(200px) rotate(720deg);
+    }
+}
+@keyframes mars-rotation {
+    from{
+       transform: rotate(0deg) translate(300px) rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg) translate(300px) rotate(-360deg);
+    }
+}
+@keyframes venus-rotation {
+    from{
+       transform: rotate(0deg) translatex(140px);
+    }
+    to{
+       transform: rotate(360deg) translate(140px);
+    }
+}
+@keyframes mercury-rotation {
+    from{
+       transform: rotate(0deg) translate(90px);
+    }
+    to{
+       transform: rotate(360deg) translate(90px);
+    }
+}
