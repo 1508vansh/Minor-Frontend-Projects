@@ -30,4 +30,4 @@ Feel free to explore the projects in this repository:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/minor-frontend-projects.git
+   git clone https://github.com/1508vansh/Minor-Frontend-Projects/tree/main.git
