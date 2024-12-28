@@ -11,6 +11,9 @@ This repository contains a collection of small, yet creative and functional, fro
 Each project in this repository showcases a specific feature, concept, or design. Here's what you'll find:
 
 1. **BookMyShow-Clone** - Simple FrontPage clone of book my show website.
+2. **BubblePointer** - Generates bubble when clicked on screen.
+3. **Random Quote Generator** - Generates Random Quotes.
+4. **Background Color Changer** - Changes Background color when clicked on button.
 ---
 
 ## Technologies Used
