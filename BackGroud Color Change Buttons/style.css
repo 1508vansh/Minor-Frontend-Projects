@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+   height: 100vh;
+   width: 100vw;
+}
+.container{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.box{
+    border-radius: 20%;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    color:chartreuse;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    align-items: center;
+}
+h1{
+    color:yellowgreen;
+}
+.Capital-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 1rem;
+}
