@@ -14,6 +14,7 @@ Each project in this repository showcases a specific feature, concept, or design
 2. **BubblePointer** - Generates bubble when clicked on screen.
 3. **Random Quote Generator** - Generates Random Quotes.
 4. **Background Color Changer** - Changes Background color when clicked on button.
+5. **Mini Solar-System Animation** - Practice project of JS animation.
 ---
 
 ## Technologies Used
