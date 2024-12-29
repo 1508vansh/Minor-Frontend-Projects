@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.head, .left-head,.right-head{
+    display: flex;
+}
+.head{
+    justify-content: space-between;
+}
+.left-head>div,.right-head>div{
+    padding: 4px;
+}
+.days-to>h3{
+    padding-left: 2px;
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.left-head>div>p{
+    padding-top: 1px;
+}
+.right-head{
+    display: flex;
+    align-items: center;
+}
+.left-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second{
+    display: flex;
+    height: 30vh;
+    align-items: center;
+}
+.Date-Container{
+    padding-left:15vw;
+}
+.sec{
+    font-family: 'Courier New', Courier, monospace;
+}
+.total-days-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hour-minute-second-container{
+    display: flex;
+    justify-content: center;
+}
+.big-container{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+}
+.Olympics-date{
+    width: 40vw;
+}
+.hour-minute-second-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.hours,.minutes,.seconds{
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+.total-days{
+    font-size:5rem;
+}
+.days-text{
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+.hour-container,.minute-container,.second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
