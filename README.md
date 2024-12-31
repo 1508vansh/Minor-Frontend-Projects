@@ -16,6 +16,7 @@ Each project in this repository showcases a specific feature, concept, or design
 4. **Background Color Changer** - Changes Background color when clicked on button.
 5. **Mini Solar-System Animation** - Practice project of JS animation.
 6. **Tic-Tac-Toe** - Simple tic-tac-toe.
+7. **Dynamic-Quote-Generator** - Generates random quotes.
 ---
 
 ## Technologies Used
