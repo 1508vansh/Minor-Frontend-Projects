@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(230, 255, 255);
+}
+.container{
+    display: flex;
+    background-image: url("./roman-numerals-clock-png-6.png");
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    background-color:white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#hour{
+   background-color:black;
+   height: 70px;
+   width: 10px;
+   margin-bottom: 70px;
+   position: absolute;
+   transform-origin: bottom;
+}
+#minute{
+    background-color:black;
+    height: 90px;
+    width: 5px;
+    margin-bottom: 100px;
+    position: absolute;
+    transform-origin: bottom;
+ }
+ #second{
+    margin-left: 20px;
+    background-color: black;
+    height: 120px;
+    width: 2px;
+    margin-right: 20px;
+    position: absolute;
+    margin-bottom: 120px;
+    transform-origin: bottom;
+ }
+
