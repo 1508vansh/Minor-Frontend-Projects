@@ -11,82 +11,60 @@ function checkWinner(turn){
              let x = options[i][j];
              if(EmptyArr[x]!=turn) flag = false;
         }
-        if(flag) return true;
+        if(flag===true) return true;
     }
     return false;
 }
 let TotalNoOfMoves = 0;
-let ansElem = document.createElement('h2');
-let container = document.querySelector('.container');
-ansElem.textContent = `Player 1's is Move`;
-container.appendChild(ansElem);
-board.addEventListener('click',(event)=>{
+let ansElem = document.querySelector('#text');
+let MainFunction = (event)=>{
     let currElem = event.target;
     if(turn=='O'){
-       if(EmptyArr[event.target.id]!='E'){
+       if(EmptyArr[Number(event.target.id)]!='E'){
          ansElem.textContent = "Invalid Move";
          setTimeout(()=>{
-            container.removeChild(ansElem);
+            ansElem.textContent = "";
          },2000)
        }else{
-        ansElem.textContent = `Player 1's is Move`;
         currElem.innerHTML = turn;
         TotalNoOfMoves++;
-       EmptyArr[event.target.id] = turn;
+        let idx = Number(event.target.id);
+        EmptyArr[idx] = turn;
        let ans = checkWinner(turn);
-       if(ans){
-         ansElem.textContent = `Player 1 is Winner! Restart To Play Again`;
-         container.appendChild(ansElem);
-         setTimeout(()=>{
-            let allBox = document.querySelectorAll('.cell');
-            TotalNoOfMoves = 0;
-            for(let i = 0;i<9;i++){
-                allBox[i].innerHTML = "";
-                EmptyArr[i] = 'E';
-            }
-            container.removeChild(ansElem);
-            ansElem.textContent = `Player 1's is Move`;
-            container.appendChild(ansElem);
-         },2000);
-       }
+       ansElem.textContent = `Player 1's Move`;
        turn = 'X';
+       if(ans==true){
+         ansElem.textContent = `Player 2 is Winner! Restart To Play Again`;
+         board.removeEventListener('click',MainFunction);
+         return;
+        }
     }
     }else{
-        if(EmptyArr[event.target.id]!='E'){
+        if(EmptyArr[Number(event.target.id)]!='E'){
             ansElem.textContent = "Invalid Move";
-            container.appendChild(ansElem);
             setTimeout(()=>{
-               container.removeChild(ansElem);
+               ansElem.textContent = "";
             },2000)
           }else{
-            ansElem.textContent = `Player 2's is Move`;
-            container.appendChild(ansElem);
             currElem.innerHTML = turn;
+            let idx = Number(event.target.id);
+            EmptyArr[idx] = turn;
             TotalNoOfMoves++;
-        EmptyArr[event.target.id] = turn;
-        let ans = checkWinner(turn);
-        if(ans){
-          ansElem.textContent = `Player 2 is Winner! Restart To Play Again`;
-          container.appendChild(ansElem);
-          setTimeout(()=>{
-            let allBox = document.querySelectorAll('.cell');
-          TotalNoOfMoves = 0;
-          for(let i = 0;i<9;i++){
-              allBox[i].innerHTML = "";
-              EmptyArr[i] = 'E';
-          }
-          container.removeChild(ansElem);
-          ansElem.textContent = `Player 1's is Move`;
-          container.appendChild(ansElem);
-          },2000)
+            let ans = checkWinner(turn);
+            ansElem.textContent = `Player 2's Move`;
+            turn = 'O';
+        if(ans==true){
+          ansElem.textContent = `Player 1 is Winner! Restart To Play Again`;
+          board.removeEventListener('click',MainFunction);
+          return;
         }
-        turn = 'O';
     }
 }
-if(TotalNoOfMoves==9){
+if(TotalNoOfMoves>=9){
     ansElem.textContent = "Match Tied! Restart To Play Again";
 }
-});
+}
+board.addEventListener('click',MainFunction);
 let restart = document.querySelector('#restartButton');
 restart.addEventListener('click',()=>{
     let allBox = document.querySelectorAll('.cell');
@@ -95,7 +73,7 @@ restart.addEventListener('click',()=>{
         allBox[i].innerHTML = "";
         EmptyArr[i] = 'E';
     }
-    container.removeChild(ansElem);
-    ansElem.textContent = `Player 1's is Move`;
-    container.appendChild(ansElem);
+    turn = 'X';
+    ansElem.textContent = `Player 1's Move`;
+    board.addEventListener('click',MainFunction);
 })
