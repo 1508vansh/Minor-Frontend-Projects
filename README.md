@@ -17,6 +17,7 @@ Each project in this repository showcases a specific feature, concept, or design
 5. **Mini Solar-System Animation** - Practice project of JS animation.
 6. **Tic-Tac-Toe** - Simple tic-tac-toe.
 7. **Dynamic-Quote-Generator** - Generates random quotes.
+8. **Wall-Clock** - Simple wall clock.
 ---
 
 ## Technologies Used
