@@ -12,12 +12,13 @@ Each project in this repository showcases a specific feature, concept, or design
 
 1. **BookMyShow-Clone** - Simple FrontPage clone of book my show website.
 2. **BubblePointer** - Generates bubble when clicked on screen.
-3. **Random Quote Generator** - Generates Random Quotes.
+3. **Random Quiz Generator** - Generates Random Quizes.
 4. **Background Color Changer** - Changes Background color when clicked on button.
 5. **Mini Solar-System Animation** - Practice project of JS animation.
 6. **Tic-Tac-Toe** - Simple tic-tac-toe.
 7. **Dynamic-Quote-Generator** - Generates random quotes.
 8. **Wall-Clock** - Simple wall clock.
+9. **Olympics-Date-Counter** - ..........
 ---
 
 ## Technologies Used
