@@ -19,6 +19,7 @@ Each project in this repository showcases a specific feature, concept, or design
 7. **Dynamic-Quote-Generator** - Generates random quotes.
 8. **Wall-Clock** - Simple wall clock.
 9. **Olympics-Date-Counter** - ..........
+10. **Weather tracer** - shows real time data.
 ---
 
 ## Technologies Used
