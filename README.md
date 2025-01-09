@@ -20,7 +20,7 @@ Each project in this repository showcases a specific feature, concept, or design
 8. **Wall-Clock** - Simple wall clock.
 9. **Olympics-Date-Counter** - ..........
 10. **Weather tracer** - shows real time data. using weather api.
----
+--
 
 ## Technologies Used
 
