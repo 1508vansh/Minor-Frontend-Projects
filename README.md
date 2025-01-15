@@ -39,3 +39,4 @@ Feel free to explore the projects in this repository:
 1. Clone the repository:
    ```bash
    git clone https://github.com/1508vansh/Minor-Frontend-Projects.git
+   ...
