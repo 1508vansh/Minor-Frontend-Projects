@@ -1,6 +1,6 @@
 # Minor Frontend Projects
 
-Welcome to the **Minor Frontend Projects** repository! 🎨✨ 
+Welcome to the **Minor Frontend Projects** repository! 🎨✨
 
 This repository contains a collection of small, yet creative and functional, frontend projects. These projects are designed to sharpen my frontend development skills and explore various concepts, techniques, and tools in web development.
 
