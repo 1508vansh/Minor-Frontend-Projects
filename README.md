@@ -6,7 +6,7 @@ This repository contains a collection of small, yet creative and functional, fro
 
 ---
 ## Projects Included
-
+------
 Each project in this repository showcases a specific feature, concept, or design. Here's what you'll find:
 
 1. **BookMyShow-Clone** - Simple FrontPage clone of book my show website.
