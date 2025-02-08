@@ -1,0 +1,22 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "\"Simple tic tac toe game\"",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1508vansh/Minor-Frontend-Projects.git"
+  },
+  "author": "Vansh Soni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1508vansh/Minor-Frontend-Projects/issues"
+  },
+  "homepage": "https://github.com/1508vansh/Minor-Frontend-Projects#readme",
+  "dependencies": {
+    "parcel": "^2.13.3"
+  }
+}

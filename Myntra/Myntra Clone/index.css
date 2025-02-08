@@ -1,0 +1,98 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#m-logo{
+  height: 60px;
+}
+#search{
+  height: 20px;
+}
+.but{
+   border: none;
+   background-color: white;
+   font-weight: bold;
+}
+.but-container, .input-search-container, .head-right-div, .logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.but-container{
+   gap: 30px;
+}
+.logo-container{
+  margin-left: 30px;
+}
+.head-right-div{
+  margin-right: 30px;
+}
+#input{
+   width: 30vw;
+}
+#input{
+  border: none;
+}
+.input-search-container>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+.card {
+  background-color: gray;
+  width: 200px;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+/* .card-text-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Prevents misalignment */
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+#card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures full image visibility */
+}
+ .card-content{
+  display: flex;
+  justify-content: center;
+ }
+ .card-content p, .card-content h2 {
+  margin: 0; /* Remove extra spacing */
+}
+#Top-Buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.top-but{
+  padding: 5px;
+  color: white;
+  background-color: rgb(56, 121, 251);
+  border-radius: 5px;
+}
