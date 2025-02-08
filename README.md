@@ -1,13 +1,12 @@
 # Minor Frontend Projects
 
-Welcome to the **Minor Frontend Projects** repository! 🎨✨ 
+Welcome to the **Minor Frontend Projects** repository! 🎨✨
 
 This repository contains a collection of small, yet creative and functional, frontend projects. These projects are designed to sharpen my frontend development skills and explore various concepts, techniques, and tools in web development.
 
 ---
-
 ## Projects Included
-
+------
 Each project in this repository showcases a specific feature, concept, or design. Here's what you'll find:
 
 1. **BookMyShow-Clone** - Simple FrontPage clone of book my show website.
@@ -19,7 +18,8 @@ Each project in this repository showcases a specific feature, concept, or design
 7. **Dynamic-Quote-Generator** - Generates random quotes.
 8. **Wall-Clock** - Simple wall clock.
 9. **Olympics-Date-Counter** - ..........
----
+10. **Weather tracer** - shows real time data. using weather api...
+--
 
 ## Technologies Used
 
